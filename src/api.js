@@ -51,7 +51,7 @@ router.post('/formSubmit', async (req, res) => {
     transporter.sendMail(mailOptionsToRequester),
   ])
     .then((response) => {
-      res.status(200).json({ status: 'success' });
+      res.status(200).send('success');
       console.log(response);
     })
     .catch((err) => {
