@@ -25,8 +25,8 @@ router.post('/formSubmit', async (req, res) => {
     secureConnection: true,
     port: 587,
     auth: {
-      user: process.env.EMAIL_ADDRESS_FROM, // Replace with your email
-      pass: process.env.EMAIL_PASSWORD, // Replace with your email password
+      user: process.env.EMAIL_ADDRESS_FROM,
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
